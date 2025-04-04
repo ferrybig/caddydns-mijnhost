@@ -12,12 +12,12 @@
 \<PROVIDER\> module for Caddy
 ===========================
 
-This package contains a DNS provider module for [Caddy](https://github.com/caddyserver/caddy). It can be used to manage DNS records with \<PROVIDER\>.
+This package contains a DNS provider module for [Caddy](https://github.com/caddyserver/caddy). It can be used to manage DNS records with mijn.host.
 
 ## Caddy module name
 
 ```
-dns.providers.provider_name
+dns.providers.mijn_host
 ```
 
 ## Config examples

@@ -1,15 +1,15 @@
-package template
+package mijn_host
 
 import (
 	"fmt"
 
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	libdnstemplate "github.com/libdns/template"
+	mijnhost "github.com/zjean/libdns-mijnhost"
 )
 
 // Provider lets Caddy read and manipulate DNS records hosted by this DNS provider.
-type Provider struct{ *libdnstemplate.Provider }
+type Provider struct{ *mijnhost.Provider }
 
 func init() {
 	caddy.RegisterModule(Provider{})
@@ -18,15 +18,15 @@ func init() {
 // CaddyModule returns the Caddy module information.
 func (Provider) CaddyModule() caddy.ModuleInfo {
 	return caddy.ModuleInfo{
-		ID:  "dns.providers.template",
-		New: func() caddy.Module { return &Provider{new(libdnstemplate.Provider)} },
+		ID:  "dns.providers.mijnhost",
+		New: func() caddy.Module { return &Provider{new(mijnhost.Provider)} },
 	}
 }
 
 // TODO: This is just an example. Useful to allow env variable placeholders; update accordingly.
 // Provision sets up the module. Implements caddy.Provisioner.
 func (p *Provider) Provision(ctx caddy.Context) error {
-	p.Provider.APIToken = caddy.NewReplacer().ReplaceAll(p.Provider.APIToken, "")
+	p.Provider.ApiKey = caddy.NewReplacer().ReplaceAll(p.Provider.ApiKey, "")
 	return fmt.Errorf("TODO: not implemented")
 }
 
@@ -49,11 +49,11 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 		for nesting := d.Nesting(); d.NextBlock(nesting); {
 			switch d.Val() {
 			case "api_token":
-				if p.Provider.APIToken != "" {
-					return d.Err("API token already set")
+				if p.Provider.ApiKey != "" {
+					return d.Err("Api Key already set")
 				}
 				if d.NextArg() {
-					p.Provider.APIToken = d.Val()
+					p.Provider.ApiKey = d.Val()
 				}
 				if d.NextArg() {
 					return d.ArgErr()
@@ -63,8 +63,8 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 			}
 		}
 	}
-	if p.Provider.APIToken == "" {
-		return d.Err("missing API token")
+	if p.Provider.ApiKey == "" {
+		return d.Err("missing API Key")
 	}
 	return nil
 }
