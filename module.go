@@ -1,11 +1,9 @@
 package mijn_host
 
 import (
-	"fmt"
-
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	mijnhost "github.com/zjean/libdns-mijnhost"
+	mijnhost "github.com/libdns/mijnhost"
 )
 
 // Provider lets Caddy read and manipulate DNS records hosted by this DNS provider.
@@ -23,32 +21,28 @@ func (Provider) CaddyModule() caddy.ModuleInfo {
 	}
 }
 
-// TODO: This is just an example. Useful to allow env variable placeholders; update accordingly.
 // Provision sets up the module. Implements caddy.Provisioner.
 func (p *Provider) Provision(ctx caddy.Context) error {
 	p.Provider.ApiKey = caddy.NewReplacer().ReplaceAll(p.Provider.ApiKey, "")
-	return fmt.Errorf("TODO: not implemented")
+	return nil
 }
 
-// TODO: This is just an example. Update accordingly.
 // UnmarshalCaddyfile sets up the DNS provider from Caddyfile tokens. Syntax:
 //
-// providername [<api_token>] {
-//     api_token <api_token>
-// }
-//
-// **THIS IS JUST AN EXAMPLE AND NEEDS TO BE CUSTOMIZED.**
+//	mijnhost [<api_key>] {
+//	    api_key <api_key>
+//	}
 func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	for d.Next() {
 		if d.NextArg() {
-			p.Provider.APIToken = d.Val()
+			p.Provider.ApiKey = d.Val()
 		}
 		if d.NextArg() {
 			return d.ArgErr()
 		}
 		for nesting := d.Nesting(); d.NextBlock(nesting); {
 			switch d.Val() {
-			case "api_token":
+			case "api_key":
 				if p.Provider.ApiKey != "" {
 					return d.Err("Api Key already set")
 				}
