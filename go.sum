@@ -33,6 +33,8 @@ github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/ferrybig/mijnhost v0.0.0-20250801174016-4db1dc9f5b12 h1:px8uUNK3bkWt4BxHNovZ1kX8sJ9XF+4vCdFV12Iol3k=
 github.com/ferrybig/mijnhost v0.0.0-20250801174016-4db1dc9f5b12/go.mod h1:452awH+P9FKsleutweCbg0/keG5/z1xCYuqjdUPMg/c=
+github.com/ferrybig/mijnhost v0.0.0-20250801181819-5e1f5b66f856 h1:BUAn2gdju/nHOhHkoiKvtrIbUJzKbucTEmcWBk2/83U=
+github.com/ferrybig/mijnhost v0.0.0-20250801181819-5e1f5b66f856/go.mod h1:452awH+P9FKsleutweCbg0/keG5/z1xCYuqjdUPMg/c=
 github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568/go.mod h1:xEzjJPgXI435gkrCt3MPfRiAkVrwSbHsst4LCFVfpJc=
 github.com/francoispqt/gojay v1.2.13 h1:d2m3sFjloqoIUQU3TsHBgj6qg/BVGlTBeHDUmyJnXKk=
 github.com/francoispqt/gojay v1.2.13/go.mod h1:ehT5mTG4ua4581f1++1WLG0vPdaA9HaiDsoyrBGkyDY=

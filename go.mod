@@ -12,7 +12,7 @@ require (
 	github.com/caddyserver/zerossl v0.1.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
-	github.com/ferrybig/mijnhost v0.0.0-20250801174016-4db1dc9f5b12 // indirect
+	github.com/ferrybig/mijnhost v0.0.0-20250801181819-5e1f5b66f856 // indirect
 	github.com/francoispqt/gojay v1.2.13 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
