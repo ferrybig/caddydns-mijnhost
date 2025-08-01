@@ -3,7 +3,7 @@ package mijn_host
 import (
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	mijnhost "github.com/libdns/mijnhost"
+	mijnhost "github.com/ferrybig/mijnhost"
 )
 
 // Provider lets Caddy read and manipulate DNS records hosted by this DNS provider.

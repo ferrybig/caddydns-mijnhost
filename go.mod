@@ -1,4 +1,4 @@
-module github.com/caddy-dns/mijnhost
+module github.com/ferrybig/caddydns-mijnhost
 
 go 1.24
 
@@ -6,7 +6,7 @@ toolchain go1.24.2
 
 require (
 	github.com/caddyserver/caddy/v2 v2.10.0
-	github.com/libdns/mijnhost v0.2.0
+	github.com/ferrybig/mijnhost v0.0.0-20250801115639-1a6ed76aabbb
 )
 
 require (
