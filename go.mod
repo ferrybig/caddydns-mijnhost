@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/caddyserver/caddy/v2 v2.10.0
-	github.com/ferrybig/mijnhost v0.0.0-20250801154353-1e4c41dcf546
+	github.com/ferrybig/mijnhost v0.0.0-20250801174016-4db1dc9f5b12
 )
 
 require (
