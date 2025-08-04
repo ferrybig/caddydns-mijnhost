@@ -39,6 +39,8 @@ github.com/ferrybig/mijnhost v0.0.0-20250801182410-843610611906 h1:Zc4+cxvkFLzEj
 github.com/ferrybig/mijnhost v0.0.0-20250801182410-843610611906/go.mod h1:452awH+P9FKsleutweCbg0/keG5/z1xCYuqjdUPMg/c=
 github.com/ferrybig/mijnhost v0.0.0-20250804135505-35282d7f9bd7 h1:5zaNAedNLy5s1BXkvNThGBAbCosR4T5AkZK1vTkSNLk=
 github.com/ferrybig/mijnhost v0.0.0-20250804135505-35282d7f9bd7/go.mod h1:452awH+P9FKsleutweCbg0/keG5/z1xCYuqjdUPMg/c=
+github.com/ferrybig/mijnhost v0.0.0-20250804141659-89609dcc70a1 h1:IQkKVEo5pvzR0TSh5j4ycc6j1/4M8t+0gxxwRwsC/Nc=
+github.com/ferrybig/mijnhost v0.0.0-20250804141659-89609dcc70a1/go.mod h1:452awH+P9FKsleutweCbg0/keG5/z1xCYuqjdUPMg/c=
 github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568/go.mod h1:xEzjJPgXI435gkrCt3MPfRiAkVrwSbHsst4LCFVfpJc=
 github.com/francoispqt/gojay v1.2.13 h1:d2m3sFjloqoIUQU3TsHBgj6qg/BVGlTBeHDUmyJnXKk=
 github.com/francoispqt/gojay v1.2.13/go.mod h1:ehT5mTG4ua4581f1++1WLG0vPdaA9HaiDsoyrBGkyDY=
